@@ -4,7 +4,7 @@ import "../css/calc.css";
 import "../css/rpage.css";
 import "../css/rpage1.css";
 import "../css/rpage2.css";
-import "../css/style.css";
+
 import Container from "react-bootstrap/Container";
 import { Dropdown } from "semantic-ui-react";
 import { Checkbox } from "semantic-ui-react";
