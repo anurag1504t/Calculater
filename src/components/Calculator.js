@@ -92,7 +92,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 /*api */
-const MOCK_SERVICE = "http://localhost:3004";
+const MOCK_SERVICE = "http://4360cf31a54f.ngrok.io/api/trial/";
 /*api ka name and defining all parameter*/
 export class Calculator extends Component {
   // const classes = useStyles();
@@ -100,6 +100,7 @@ export class Calculator extends Component {
     super();
     this.state = {
       checked: false,
+      age:50,
       spo: "",
       heartRate: "",
       resRate: "",
@@ -183,7 +184,7 @@ export class Calculator extends Component {
     /*this is how the data is being sent in json format*/
 
     try {
-      fetch(`${MOCK_SERVICE}/calculator`, {
+      fetch(`${MOCK_SERVICE}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -205,9 +206,12 @@ export class Calculator extends Component {
         }),
       })
         .then((response) => response.json())
-        .then((data) => {});
+        .then((data) => {
+          console.log(data);
+        });
     } catch (e) {
       console.error("error");
+      console.log(e);
     }
   };
 

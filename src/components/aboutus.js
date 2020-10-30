@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../css/styles.css";
 import "../css/fontawe.css";
+import "../css/Aboutus.css";
 export class aboutus extends Component {
   render() {
     return (
@@ -61,15 +62,15 @@ export class aboutus extends Component {
         {/* Jquery */}
         {/* slick slider */}
         <h1>ACKNOWLEDGEMENT</h1>
-        <section className="main-content-area">
+        
           <div className="main about">
-            <section className="rdg-section section-alt leadership-teams">
+            
               <div className="narrow-container flex-container justify-space-between">
                 <div className="leadership-teams--left">
                   <h5 className="headline__sub-head">FOUNDINNG MEMBERS</h5>
                   <h4 className="headline"></h4>
                 </div>
-                <div className="leadership-teams--right">
+                <div className="leadership">
                   <section className="leadership-teams__global flex-container justify-content-center">
                     <div className="leadership-teams__item">
                       <div className="leadership-teams__image">
@@ -126,8 +127,7 @@ export class aboutus extends Component {
                       <span className="leadership-teams__title" />
                     </div>
                     {/* */}
-                  </section>
-                  {/* end leadership-teams__global */}
+                  </section>{/* end leadership-teams__global */}
                   {/* end tabs */}
                 </div>
                 {/* end leadership-teams--right */}
@@ -138,7 +138,7 @@ export class aboutus extends Component {
                   <h4 className="headline"></h4>
                 </div>
                 <div className="leadership-teams--right">
-                  <section className="leadership-teams__global flex-container justify-content-center">
+                  
                     <div className="leadership-teams__item">
                       <div className="leadership-teams__image">
                         <img
@@ -160,11 +160,10 @@ export class aboutus extends Component {
                       <span className="leadership-teams__name">AMITABH7</span>
                       <span className="leadership-teams__title" />
                     </div>
-                  </section>
-                  {/* end leadership-teams__global */}
-                  {/* end tabs */}
+                
+                  
                 </div>
-                {/* end leadership-teams--right */}
+                
               </div>
               <div className="narrow-container flex-container justify-space-between">
                 <div className="leadership-teams--left">
@@ -172,7 +171,7 @@ export class aboutus extends Component {
                   <h4 className="headline"></h4>
                 </div>
                 <div className="leadership-teams--right">
-                  <section className="leadership-teams__global flex-container justify-content-center">
+                  
                     <div className="leadership-teams__item">
                       <div className="leadership-teams__image">
                         <img
@@ -197,15 +196,15 @@ export class aboutus extends Component {
                     {/* */}
                     {/* */}
                     {/* */}
-                  </section>
+                  
                   {/* end leadership-teams__global */}
                   {/* end tabs */}
                 </div>
                 {/* end leadership-teams--right */}
               </div>
-            </section>
+           
           </div>
-        </section>
+        
       </div>
     );
   }

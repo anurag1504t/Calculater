@@ -24,14 +24,14 @@ class secform extends React.Component {
   }
 
   fetchExistingPatient = (id) => {
-    const MOCK_SERVICE = "http://localhost:3004";
-    fetch(`${MOCK_SERVICE}/api/username/${id}`, {
-      method: "GET",
+    const MOCK_SERVICE = "http://4360cf31a54f.ngrok.io/api/userlogin/";
+    fetch(`${MOCK_SERVICE}`, {
+      method: "POST",
     })
       .then((response) => response.json())
       .then((data) => {
         if (data) {
-          console.log(data);
+          console.log(data.text);
         }
       })
       .catch((e) => {
@@ -63,7 +63,9 @@ class secform extends React.Component {
           <div className="top">
             <label>HOSPITAL ID</label>
             <input placeholder="ID" name="Ptid" onChange={this.handleChange} />
+            
           </div>
+          
           <div className="form-group">
               <label htmlFor="username">PASSWORD</label>
               <input type="text" name="username"  onChange={this.handleChange}/>
