@@ -1,5 +1,21 @@
-.leardership{
-    display: flex;
-    flex-direction:row ;
+.container-fluid{
+    margin: 10%;
+    text-align: center;
     
+    align-content: center;
+    margin: auto;
+    
+    
+}
+.mainabout{
+    margin-left: 20%;
+    margin-right:20%;
+    text-align: center;
+}
+.mainabout h1{
+    margin-left: 16%;
+}
+.tex{
+    margin-left: 20%;
+    margin-right:20%;
 }

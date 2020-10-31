@@ -48,43 +48,76 @@ class secform extends React.Component {
       props: { history },
     } = this;
     e.preventDefault();
-    history.push({ pathname: `/calculator`, state: { patientId: id } });
+    history.push({ pathname: `/CALCULATOR`, state: { patientId: id } });
   };
   render() {
     const { Ptid } = this.state;
 
     return (
-      <div className="jabey">
-      <div className="fulol">
-        <form className="frm">
-        <div className="ful">
-        <h2>LOGIN DETAILS</h2>
+      <div
+        className="container-fluid "
+        style={{ backgroundColor: "#242F3E", color: "rgb(0, 0, 0)" }}
+      >
+        <div className="ja">
+          <h1
+            className="text-center w-100 mt-4"
+            color="red"
+            style={{
+              fontFamily: '"Permanent Marker", cursive',
+              fontSize: "3.6rem",
+              color: "white",
+            }}
+            color="white"
+          >
+            LOGIN
+          </h1>
+          <div className="fulol">
+            <form className="frm">
+              <div className="ful">
+                <h2>LOGIN DETAILS</h2>
 
-          <div className="top">
-            <label>HOSPITAL ID</label>
-            <input placeholder="ID" name="Ptid" onChange={this.handleChange} />
-            
+                <div className="top">
+                  <label>HOSPITAL ID</label>
+                  <input
+                    className="input"
+                    type="text"
+                    placeholder="ID"
+                    name="Ptid"
+                    onChange={this.handleChange}
+                  />
+                </div>
+
+                <div className="form-group">
+                  <label htmlFor="username">PASSWORD</label>
+                  <input
+                    className="input"
+                    type="text"
+                    name="username"
+                    onChange={this.handleChange}
+                  />
+                </div>
+
+                <button
+                  className="bon"
+                  type="submit"
+                  onClick={(e) => this.fetchExistingPatient(e, Ptid)}
+                >
+                  LOGIN
+                </button>
+              </div>
+            </form>
           </div>
-          
-          <div className="form-group">
-              <label htmlFor="username">PASSWORD</label>
-              <input type="text" name="username"  onChange={this.handleChange}/>
-            </div>
-          <div className="bon">
+          <div className="dis">
+            <h3>THOSE WHO DONT WANT TO SAVE THEIR DETAILS CAN SKIP</h3>
             <button
               type="submit"
-              onClick={(e) => this.fetchExistingPatient(e, Ptid)}
+              className="yoyo"
+              onClick={(e) => this.newPatient(e, Ptid)}
             >
-              LOGIN
-            </button>
-
-          </div>
-          </div>
-        </form>
-        <button type="submit" className="yoyo" onClick={(e) => this.newPatient(e, Ptid)}>
               SKIP
             </button>
-      </div>
+          </div>
+        </div>
       </div>
     );
   }

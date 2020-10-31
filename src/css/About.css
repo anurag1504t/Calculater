@@ -67,7 +67,7 @@ h1 {
   color: white;
   border: none;
   cursor: pointer;
-  border-radius: 1.5em;
+  
   text-decoration: none;
   margin-top: 2%;
   width: 45%;
@@ -127,7 +127,7 @@ input[type='text'],
   margin: 1% 0%;
   display: inline-block;
   border: 1px solid #ccc;
-  border-radius: 1.5em;
+  
   box-sizing: border-box;
   transition: ease-in-out, width 0.35s ease-in-out;
 }
@@ -137,7 +137,7 @@ input[type='text'],
   margin: 1% 0%;
   display: inline-block;
   border: 1px solid #ccc;
-  border-radius: 1.5em;
+  
   box-sizing: border-box;
   transition: ease-in-out, width 0.35s ease-in-out;
 }
@@ -545,3 +545,20 @@ footer {
 .nav-btn{
   background-color: white;
 }
+
+.left{
+  margin-right:5%;
+  text-align: center;
+  color:white;
+  
+}
+.right{
+  margin-left:5%;
+  text-align: center;
+  
+  
+}
+.rowb{
+  background-color: white;
+}
+

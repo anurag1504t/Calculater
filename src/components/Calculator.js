@@ -100,7 +100,7 @@ export class Calculator extends Component {
     super();
     this.state = {
       checked: false,
-      age:50,
+      age: 50,
       spo: "",
       heartRate: "",
       resRate: "",
@@ -391,8 +391,14 @@ export class Calculator extends Component {
                     <div className="col-3 col-md-2 mb-1">
                       <h1 className="head">LABORATORY FINDINGS</h1>
                       <div className="box2">
-                        <label className="para_name">
-                          DDIMER:
+                      <div style={{ display: "flex", flexDirection: "row" }}>
+                          <label className="para_name">
+                            DDIMER:
+                            <span className="error" id="sage" color="red">
+                              *
+                            </span>
+                          </label>
+                        
                           <input
                             placeholder="DDIMER"
                             color="red"
@@ -409,14 +415,20 @@ export class Calculator extends Component {
                             <option value={1}>g/mL</option>
                             <option value={2}>ml/ml</option>
                           </select>
-                          <span className="error" id="sage" color="red">
-                            *
-                          </span>
-                        </label>
+
+                        
+                        </div>
                         <br />
                         <br />
+                        
+                        <div style={{ display: "flex", flexDirection: "row" }}>
                         <label className="para_name">
                           CPK:
+                          <span className="error" id="sage" color="red">
+                          *
+                          </span>
+                         </label>
+                      
                           <input
                             type="number"
                             id="cpk"
@@ -431,14 +443,16 @@ export class Calculator extends Component {
                             <option value={1}>U/L</option>
                             <option value={2}>G/L</option>
                           </select>
+                         </div>
+                        <br />
+                        <br />
+                        <div style={{ display: "flex", flexDirection: "row" }}>
+                        <label className="para_name">
+                          CRP:
                           <span className="error" id="sage" color="red">
                             *
                           </span>
                         </label>
-                        <br />
-                        <br />
-                        <label className="para_name">
-                          CRP:
                           <input
                             type="number"
                             id="crp"
@@ -453,14 +467,17 @@ export class Calculator extends Component {
                             <option value={1}>mg/L</option>
                             <option value={2}>g/L</option>
                           </select>
-                          <span className="error" id="sage" color="red">
-                            *
-                          </span>
-                        </label>
+                          
+                        </div>
                         <br />
                         <br />
+                        <div style={{ display: "flex", flexDirection: "row" }}>
                         <label className="para_name">
                           LDH:
+                          <span className="error" id="sage" color="red">
+                          *
+                        </span>
+                      </label>
                           <input
                             type="number"
                             id="ldh"
@@ -475,14 +492,17 @@ export class Calculator extends Component {
                             <option value={1}>U/L</option>
                             <option value={2}>g/L</option>
                           </select>
-                          <span className="error" id="sage" color="red">
-                            *
-                          </span>
-                        </label>
+                         
+                        </div>
                         <br />
                         <br />
+                        <div style={{ display: "flex", flexDirection: "row" }}>
                         <label className="para_name">
                           Troponin:
+                          <span className="error" id="sage" color="red">
+                          *
+                        </span>
+                      </label>
                           <input
                             type="number"
                             id="tropo"
@@ -497,14 +517,18 @@ export class Calculator extends Component {
                             <option value={1}>ng/ml</option>
                             <option value={2}>g/mL</option>
                           </select>
-                          <span className="error" id="sage" color="red">
-                            *
-                          </span>
-                        </label>
+                         
+                        </div>
                         <br />
                         <br />
+                        <div style={{ display: "flex", flexDirection: "row" }}>
                         <label className="para_name">
                           Ferritin:
+
+                          <span className="error" id="sage" color="red">
+                          *
+                        </span>
+                      </label>
                           <input
                             type="number"
                             id="ferr"
@@ -519,14 +543,17 @@ export class Calculator extends Component {
                             <option value={1}>g/L</option>
                             <option value={2}>mg/L</option>
                           </select>
+                         
+                        </div>
+                        <br />
+                        <br />
+                        <div style={{ display: "flex", flexDirection: "row" }}>
+                        <label className="para_name">
+                          Absolute LC:
                           <span className="error" id="sage" color="red">
                             *
                           </span>
                         </label>
-                        <br />
-                        <br />
-                        <label className="para_name">
-                          Absolute LC:
                           <input
                             type="number"
                             id="abg"
@@ -541,13 +568,13 @@ export class Calculator extends Component {
                             <option value={2}>g/L</option>
                           </select>
                           <br />
-                          <span className="error" id="sage" color="red">
-                            *
-                          </span>
-                        </label>
+                          
+                        </div>
                         <br />
+                        <div style={{ display: "flex", flexDirection: "row" }}>
                         <label className="para_name">
-                          CT SCAN
+                          CT SCAN:
+                          </label>
                           <input type="number" id="ctscan" />
                           <select
                             id="measure_ctscan"
@@ -557,11 +584,15 @@ export class Calculator extends Component {
                             <option value={1}>U/L</option>
                             <option value={2}>g/L</option>
                           </select>
-                        </label>
+                        
+                        </div>
                         <br />
                         <br />
+                        <div style={{ display: "flex", flexDirection: "row" }}>
                         <label className="para_name">
-                          ABG:
+                          ABG    :
+                          </label>
+                          
                           <input
                             type="number"
                             id="checkAbg"
@@ -577,7 +608,9 @@ export class Calculator extends Component {
                           </select>
                           <br />
                           (P / F ratio)
-                        </label>
+                        
+                        </div>
+                        
                       </div>
                     </div>
                   </div>

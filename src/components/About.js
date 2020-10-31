@@ -50,8 +50,8 @@ export class About extends Component {
           </div>
           <section>
             <div className="container-fluid p-0" id="who">
-              <div className="row">
-                <h2>Who Are WE</h2>
+              <div className="rowb">
+                <h1>Who Are WE</h1>
                 <p>
                   We examine people using sophesticated ai ml tools and tell
                   them if they are at a risk.
@@ -59,8 +59,8 @@ export class About extends Component {
               </div>
             </div>
           </section>
-          <div className="connect p-0">
-            <div className="flex-center">
+          <div className="row1">
+              {/*<div className="flex-center">
               <a href>
                 <i className="fa fa-github fa-4x icon-3d" />
               </a>
@@ -73,7 +73,19 @@ export class About extends Component {
               <a href>
                 <i className="fa fa-twitter fa-4x icon-3d" />
               </a>
+              </div>*/}
+              <div className="flex-center">
+              <div style={{ display: "flex", flexDirection: "row" }}>
+            <div className="left">
+              <h3>MISSION</h3>
+              <p>lorel ipsum jdbjfkwrle kdnfn dknfjerlfd fdjdsflk dfjndsan f v uihjhjjkhh kkj jkh  kj kb jk ku </p>
             </div>
+            <div className="right">
+              <h3>PLAN</h3>
+              <p>lorel is ifjr gk jfkglsn fgnlfkd gknflngknhlg sdfgh fghk gf jhg ghhygg ugiguiu</p>
+            </div>
+          </div>
+          </div>
           </div>
           <footer>
             <p>© Copyright 2020 MIT-Manipal</p>

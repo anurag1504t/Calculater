@@ -1,15 +1,93 @@
-.jabey{
-    margin:10%;
-    display:center;
+.ja{
+    display:inline;
+    width:100%;
+    height:100%;
+    background-color: yellow;
+    background-image: url("https://tse4.mm.bing.net/th?id=OIP.QJPTo_zwSwjqOEixbC3UzQHaEq&pid=Api&P=0&w=278&h=176");
+    
+   
+}
+.container-fluid{
+    height: 100%;
+    
 }
 .frm{
-    margin:10%;
-    border:5px solid black;
+    
+    border-radius: 0px;
+    
+}
+.ful{
+    border:1px solid white;
+    border-radius: 0px;
+    margin-right: 20%;
+    margin-left:20%;
+    margin-top:10%;
+
 }
 .fulol{
-    display:inline;
+    margin: white 5px solid white;
 }
-
+.dis{
+    margin-left: 20%;
+    margin-right: 20%;
+}
 .yoyo{
-    background-color: red;
+    width: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color:  red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
 }
+.skip{
+    width: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color:  #242F3E;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+.skip :hover{
+    background-color:  #263750;
+    color: white;
+}
+.input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+.bon {
+    width: 100%;
+    background-color:  #242F3E;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid lightblue;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+.bon :hover {
+    background-color:  #263750;
+  }
+  
+.ja{
+    background-color:  #263750;
+  }
+
+
