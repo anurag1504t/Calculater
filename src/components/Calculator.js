@@ -92,7 +92,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 /*api */
-const MOCK_SERVICE = "http://329a5e761b25.ngrok.io/api/trial/";
+const MOCK_SERVICE = "http://8e013f28e5dd.ngrok.io/api/trial/";
 /*api ka name and defining all parameter*/
 export class Calculator extends Component {
   // const classes = useStyles();
