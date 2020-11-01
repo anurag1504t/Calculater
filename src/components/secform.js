@@ -111,7 +111,7 @@ class secform extends React.Component {
             <h3>THOSE WHO DONT WANT TO SAVE THEIR DETAILS CAN SKIP</h3>
             <button
               type="submit"
-              className="yoyo"
+              className="yoyod"
               onClick={(e) => this.newPatient(e, Ptid)}
             >
               SKIP

@@ -100,10 +100,10 @@ export class Calculator extends Component {
     super();
     this.state = {
       checked: false,
-      age: 50,
+      age: "50",
       spo: "",
-      heartRate: "",
-      resRate: "",
+      heartrate: "",
+      resrate: "",
       drpdownValue: "",
       ddimer: "",
       cpk: "",
@@ -165,9 +165,10 @@ export class Calculator extends Component {
   handleSubmit = (e) => {
     const {
       state: {
+        age,
         spo,
-        heartRate,
-        resRate,
+        heartrate,
+        resrate,
         drpdownValue,
         ddimer,
         cpk,
@@ -189,23 +190,9 @@ export class Calculator extends Component {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          spo,
-          heartRate,
-          resRate,
-          drpdownValue,
-          ddimer,
-          cpk,
-          crp,
-          ldh,
-          tropo,
-          ferr,
-          absolute,
-          ctscan,
-          abg,
-        }),
+        body: JSON.stringify({spo,heartrate,drpdownValue,ddimer,cpk,crp,ldh,tropo,ferr,absolute,ctscan,abg,age,resrate}),
       })
-        .then((response) => response.json())
+        .then((response) => console.log(response))
         .then((data) => {
           console.log(data);
         });
@@ -226,11 +213,7 @@ export class Calculator extends Component {
             <h1>RISK CALCULATOR</h1>
           </div>
           <div className="Image-container">
-            <img
-              src="https://socialimages.sakalmediagroup.com/sakaltimes-prod/s3fs-public/news-story/cover-images/1download_20_282_29.png?z4Sb2.lxpwOlAjwGaVw.sbUce8LfyVAj"
-              width="100%"
-              height="300px"
-            />
+            
             <div className="putto">
               <h4>
                 This web based risk calculator estimates the risk of cytokine
@@ -270,7 +253,7 @@ export class Calculator extends Component {
                     RESPIRATORY RATE:
                     <input
                       type="number"
-                      id="resRate"
+                      id="resrate"
                       required
                       onChange={this.handleChange}
                     />
@@ -284,7 +267,7 @@ export class Calculator extends Component {
                     HEART RATE:
                     <input
                       type="number"
-                      id="heartRate"
+                      id="heartrate"
                       required
                       onChange={this.handleChange}
                     />
@@ -486,7 +469,7 @@ export class Calculator extends Component {
                         </label>
                           <input
                             type="number"
-                            id="abg"
+                            id="absolute"
                             onChange={this.handleLabFindings}
                           />
                           <select
@@ -505,7 +488,7 @@ export class Calculator extends Component {
                         <label className="para_name">
                           CT SCAN:
                           </label>
-                          <input type="number" id="ctscan" />
+                          <input type="ctscan" id="ctscan" />
                           <select
                             id="measure_ctscan"
                             name="measure"
@@ -525,7 +508,7 @@ export class Calculator extends Component {
                           
                           <input
                             type="number"
-                            id="checkAbg"
+                            id="abg"
                             onChange={this.handleLabFindings}
                           />
                           <select
@@ -566,15 +549,7 @@ export class Calculator extends Component {
             </marquee>
           </a>
           
-          <div className="graph">
-            <img
-              src="https://www.covidanalytics.io/assets/risk_calculators/mortality/model_without_lab.jpg"
-              width="60%"
-              height="20%"
-              className="center"
-              dispaly="center"
-            />
-          </div>
+         
           <div className="information">
             <pre>
               Moderate and high risk patients require aggressive monitoring of
