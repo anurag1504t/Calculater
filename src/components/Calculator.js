@@ -4,27 +4,13 @@ import "../css/calc.css";
 import "../css/rpage.css";
 import "../css/rpage1.css";
 import "../css/rpage2.css";
-import Header from './Header';
-import Container from "react-bootstrap/Container";
+
 import { Dropdown } from "semantic-ui-react";
 import { Checkbox } from "semantic-ui-react";
-import InputLabel from "@material-ui/core/InputLabel";
-import MenuItem from "@material-ui/core/MenuItem";
-import Row from "react-bootstrap/Row";
 
-import Col from "react-bootstrap/Col";
-import Select from "@material-ui/core/Select";
-import Chip from "@material-ui/core/Chip";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 
-import {
-  Form,
-  risku,
-  Button,
-  FormGroup,
-  FormControl,
-  ControlLabel,
-} from "react-bootstrap";
+
 //import LayoutTextFields from './LayoutTextFields';
 const styleLink = document.createElement("link");
 styleLink.rel = "stylesheet";
@@ -535,7 +521,7 @@ export class Calculator extends Component {
 
             <div className="btype">
               <button type="submit" id="sub" onClick={this.handleSubmit}>
-                CHECK PARAMETERS
+                CALCULATE
               </button>
             </div>
           </form>
