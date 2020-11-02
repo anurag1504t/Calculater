@@ -4,15 +4,15 @@ import About from './components/About';
 
 import secForm from './components/secform';
 import aboutus from './components/aboutus';
-
+import Header from './components/Header';
 import {BrowserRouter,useHistory} from 'react-router-dom'
 import Certificates, { certification } from './components/certification';
 import Calculator from './components/Calculator';
 
-import NavBar from './components/navbar';
 import {initialstate,reducer} from './userreducer'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import secform from './components/secform';
+
 
 export const usercontext=createContext()
 const Routing=()=>{
@@ -38,7 +38,7 @@ const Routing=()=>{
 
   return (
       <Switch>
-      <NavBar/>
+      <Header/>
           <Route exact path='/calculator'>
               <Calculator/>
           </Route>
@@ -61,13 +61,14 @@ function App() {
   return (
     <usercontext.Provider value={{state,dispatch}}>
     <Router>
+    <Header/>
       <div className="App">
         <Switch>
           <Route exact path="/" component={About}></Route>
           <Route exact path="/about" component={About}></Route>
           
           <Route exact path="/secLogin" component={secForm}></Route>
-          <Route exact path="/calculator" component={Calculator}></Route>
+          <Route exact path="/CALCULATOR" component={Calculator}></Route>
           <Route exact path="/certificates" component={Certificates}></Route>
           <Route exact path="/aboutus" component={aboutus}></Route>
          

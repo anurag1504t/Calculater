@@ -4,7 +4,7 @@ import "../css/calc.css";
 import "../css/rpage.css";
 import "../css/rpage1.css";
 import "../css/rpage2.css";
-
+import Header from './Header';
 import Container from "react-bootstrap/Container";
 import { Dropdown } from "semantic-ui-react";
 import { Checkbox } from "semantic-ui-react";
@@ -95,6 +95,7 @@ const useStyles = makeStyles((theme) => ({
 const MOCK_SERVICE = "http://e5986a2d38a5.ngrok.io/api/trial/";
 /*api ka name and defining all parameter*/
 export class Calculator extends Component {
+  
   // const classes = useStyles();
   constructor() {
     super();
@@ -205,6 +206,7 @@ export class Calculator extends Component {
   render() {
     const hidden = this.state.checked ? "" : "hidden";
     return (
+      
       <div>
         &lt;
         <title>Risk Calculator</title>

@@ -55,10 +55,10 @@ class secform extends React.Component {
 
     return (
       <div
-        className="over"
+        className="container-fluid "
         style={{ backgroundColor: "#242F3E", color: "rgb(0, 0, 0)" }}
       >
-        
+        <div className="ja">
           <h1
             className="text-center w-100 mt-4"
             color="red"
@@ -71,7 +71,7 @@ class secform extends React.Component {
           >
             LOGIN
           </h1>
-          <div className="in">
+          <div className="fulol">
             <form className="frm">
               <div className="ful">
                 <h2>LOGIN DETAILS</h2>
@@ -107,7 +107,7 @@ class secform extends React.Component {
               </div>
             </form>
           </div>
-          <div className="in">
+          <div className="dis">
             <h3>THOSE WHO DONT WANT TO SAVE THEIR DETAILS CAN SKIP</h3>
             <button
               type="submit"
@@ -118,7 +118,7 @@ class secform extends React.Component {
             </button>
           </div>
         </div>
-      
+      </div>
     );
   }
 }

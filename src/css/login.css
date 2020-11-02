@@ -1,16 +1,12 @@
-.ja{
-    display:inline;
+ .ja{
+    display:inline-block;
     width:100%;
     height:100%;
-    background-color: yellow;
-    background-image: url("https://tse4.mm.bing.net/th?id=OIP.QJPTo_zwSwjqOEixbC3UzQHaEq&pid=Api&P=0&w=278&h=176");
+    
     
    
 }
-.container-fluid{
-    height: 100%;
-    
-}
+
 .frm{
     
     border-radius: 0px;
@@ -42,6 +38,7 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    height:300px;
     
 }
 .skip{
@@ -90,4 +87,22 @@
     background-color:  #263750;
   }
 
+ 
+ .over{
+    height: 100%;
+    
+    background-color: #242F3E;
+     color: rgb(0, 0, 0);
+   
 
+    
+}
+.in{
+    width:50%;
+    display:inline-block;
+}
+.over{
+    margin-top:10%;
+    width:100%;
+    height:100%;
+}
