@@ -8,7 +8,7 @@ export class About extends Component {
   render() {
     return (
       <div className="container-fluid p-0">
-        <div className="nav-btn navbar navbar-expand-lg navbar-light bg-white">
+         {/*<div className="nav-btn navbar navbar-expand-lg navbar-light bg-white">
           <button
             className="navbar-toggler"
             type="button"
@@ -42,7 +42,7 @@ export class About extends Component {
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div>
           <div className="contactUsHeading">

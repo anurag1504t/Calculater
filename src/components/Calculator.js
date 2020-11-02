@@ -208,7 +208,7 @@ export class Calculator extends Component {
     return (
       
       <div>
-        &lt;
+        {/* &lt; */}
         <title>Risk Calculator</title>
         <div className="full">
           <div className="navbar">
