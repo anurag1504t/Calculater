@@ -52,15 +52,16 @@ h1 {
   font-weight: bold;
 }
 .contactUsHeading {
-  height: 90vh;
+  height: 80vh;
   width: 100vw;
   margin-bottom: 0rem;
   padding-top: 60vh;
   background-image: url('https://www.economist.com/sites/default/files/images/print-edition/20200222_IRD001_0.jpg');
+  
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  opacity: 0.8;
+  opacity: 0.3;
 }
 .btn {
   background-color: rgba(10, 5, 5, 0.836);

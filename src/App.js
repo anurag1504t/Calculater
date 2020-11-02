@@ -39,16 +39,19 @@ const Routing=()=>{
   return (
       <Switch>
       <Header/>
-          <Route exact path='/calculator'>
+          <Route exact path='/CALCULATOR'>
               <Calculator/>
           </Route>
-          <Route path='/secLogin'>
+          <Route path='/LOGIN'>
               <secForm />
           </Route>
-          <Route path='/Certificates'>
+          <Route path='/APPRAISAL'>
               <Certificates />
           </Route>
-          <Route path='/aboutus'>
+          <Route path='/HOME'>
+              <aboutus />
+              </Route>
+          <Route path='/TEAM'>
               <aboutus />
           </Route>
           
@@ -65,12 +68,12 @@ function App() {
       <div className="App">
         <Switch>
           <Route exact path="/" component={About}></Route>
-          <Route exact path="/about" component={About}></Route>
+          <Route exact path="/HOME" component={About}></Route>
           
-          <Route exact path="/secLogin" component={secForm}></Route>
+          <Route exact path="/LOGIN" component={secForm}></Route>
           <Route exact path="/CALCULATOR" component={Calculator}></Route>
-          <Route exact path="/certificates" component={Certificates}></Route>
-          <Route exact path="/aboutus" component={aboutus}></Route>
+          <Route exact path="/APPRAISAL" component={Certificates}></Route>
+          <Route exact path="/TEAM" component={aboutus}></Route>
          
         </Switch>
       </div>

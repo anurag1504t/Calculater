@@ -29,15 +29,15 @@ export class About extends Component {
                 </li>
                 <li> </li>
                 <li>
-                  <Link to="/secLogin"> LOGIN</Link>
+                  <Link to="/LOGIN"> LOGIN</Link>
                 </li>
                 <li> </li>
                 <li>
-                  <Link to="/aboutus">ABOUT</Link>
+                  <Link to="/TEAM">TEAM</Link>
                 </li>
                 <li> </li>
                 <li>
-                  <Link to="/Certificates"> CERTIFICATION</Link>
+                  <Link to="/APPRAISAL"> APPRAISAL</Link>
                 </li>
               </ul>
             </div>

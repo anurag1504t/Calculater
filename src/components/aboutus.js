@@ -88,48 +88,34 @@ export class aboutus extends Component {
                     </div>
           <h5 className="headline__sub-head">FOUNDINNG MEMBERS</h5>
           <div className="row">
-            <div className="col-md-4">
+         
             <img
               src="https://i.pinimg.com/236x/6f/b4/4d/6fb44dd91a8378f95e066d96d26c7bb7.jpg"
-              
+              class="col-md-3 col-12"
               margin="10px"
-              id="don"
-             
             />
-            <div className="text">AMITABH1</div>
-            </div>
-            <div className="col-md-4">
+            <span className="leadership-teams__name">AMITABH1</span>
+            
             <img
               src="https://i.pinimg.com/236x/6f/b4/4d/6fb44dd91a8378f95e066d96d26c7bb7.jpg"
-              
-              id="don"
+              class="col-md-3 col-12"
             />
-            <div className="leadership-teams__name">AMITABH2</div>
-            </div>
-            <div className="col-md-4">
+            <span className="leadership-teams__name">AMITABH2</span>
             <img
               src="https://i.pinimg.com/236x/6f/b4/4d/6fb44dd91a8378f95e066d96d26c7bb7.jpg"
-              
-              id="don"
+              class="col-md-3 col-12"
             />
-            <div className="leadership-teams__name">AMITABH3</div>
-            </div>
-            <div className="col-md-4"></div>
+            <span className="leadership-teams__name">AMITABH3</span>
             <img
               src="https://i.pinimg.com/236x/6f/b4/4d/6fb44dd91a8378f95e066d96d26c7bb7.jpg"
-              
-              id="don"
+              class="col-md-3 col-12"
             />
-            <div className="leadership-teams__name">AMITABH4</div>
-            </div>
-            <div className="col-md-4">
+            <span className="leadership-teams__name">AMITABH4</span>
             <img
               src="https://i.pinimg.com/236x/6f/b4/4d/6fb44dd91a8378f95e066d96d26c7bb7.jpg"
-              
-              id="don"
+              class="col-md-3 col-12"
             />
-            <div className="leadership-teams__name">AMITABH5</div>
-            </div>
+            <span className="leadership-teams__name">AMITABH5</span>
           </div>
           <br />
           <br />
@@ -301,7 +287,7 @@ export class aboutus extends Component {
         </div>
         */}
         </div>
-      
+      </div>
     );
   }
 }
