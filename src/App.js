@@ -63,9 +63,9 @@ function App() {
   const [state,dispatch]=useReducer(reducer,initialstate)
   return (
     <usercontext.Provider value={{state,dispatch}}>
-    <Router>
+    <BrowserRouter>
     <Header/>
-      <div className="App">
+      <div>
         <Switch>
           <Route exact path="/" component={About}></Route>
           <Route exact path="/HOME" component={About}></Route>
@@ -77,7 +77,7 @@ function App() {
          
         </Switch>
       </div>
-    </Router>
+    </BrowserRouter>
     </usercontext.Provider>
   );
 }
